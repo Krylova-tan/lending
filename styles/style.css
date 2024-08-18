@@ -61,7 +61,7 @@
 
 .cover {
   position: relative;
-  padding: 165px 50px 196px 50px;
+  z-index: 1;
   font-family: Raleway, Arial, sans-serif;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
@@ -73,15 +73,17 @@
   position: absolute;
   top: 0px;
   left: 0px;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
-  position: relative;
-  z-index: 1;
-  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px 0px;
+  color: #ffffff;
   font-weight: 700;
   font-size: 100px;
   line-height: 1.15;
@@ -94,14 +96,12 @@
 }
 
 .aligned-text_center {
-  position: relative;
-  top: 12px;
+  line-height: 1.4;
   text-align: center;
 }
 
 .aligned-text_right {
-  position: relative;
-  top: 17px;
+  line-height: 1;
   text-align: right;
 }
 
@@ -114,13 +114,13 @@
 }
 
 .cover__description {
-  position: relative;
-  top: 145px;
-  z-index: 1;
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 79px;
+  padding-top: 135px;
+  padding-right: 50px;
+  padding-bottom: 51px;
 }
 
 .cover__description-text {
@@ -133,7 +133,7 @@
 }
 
 .bet-button {
-  border: 1px solid #ffffff;
+  border: 1px solid currentColor;
   padding: 12px 32px 11px 31px;
   color: #ffffff;
   font-family: Raleway, Arial, sans-serif;
@@ -183,37 +183,30 @@
 
 .card {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 51px 40px 48px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
-  position: relative;
-  z-index: 1;
   color: #ffffff;
   font-weight: 700;
   font-size: 22px;
@@ -223,8 +216,6 @@
 }
 
 .card__text {
-  position: relative;
-  z-index: 1;
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
@@ -256,7 +247,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px; 
+  width: 240px;
   height: 240px;
   border-radius: 100%;
   background: #000000;
@@ -313,7 +304,7 @@
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 1.17;  
+  line-height: 1.17;
 }
 
 .footer__menu-link {
@@ -330,41 +321,3 @@
   gap: 48px;
   list-style: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
