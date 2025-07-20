@@ -27,8 +27,7 @@
 Клонируйте репозиторий
 
 ```
-git clone https://github.com/ваш-username/ono-tebe-nado.git
-cd ono-tebe-nado
+git clone https://github.com/ваш-username/lending.git
 ```
 
 Откройте файл index.html в браузере
